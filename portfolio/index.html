@@ -1,75 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <title>Maddie Phelps | Portfolio</title>
     <style>
         body {
             background-color: seashell;
-            margin-left: 40px;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            text-align: center;
+            margin: 20px;
         }
         h1 {
             color: powderblue;
-            margin-left: 40px;
-    
         }
         h2 {
             color: darkslateblue;
-            margin-left: 40px;
         }
-        
-   
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 15px;
+            color: #0077B6;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero-image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .hero-image img {
+            width: 300px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .hero-text {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .hero-text p {
+            font-size: 18px;
+            color: #03045E;
+        }
+        .hero-text button {
+            padding: 10px 20px;
+            background-color: #0077B6;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .hero-text button:hover {
+            background-color: #00B4D8;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0077B6;
+            color: white;
+            position: relative;
+        }
+        footer table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        footer td {
+            height: 40px;
+            width: 20%;
+        }
+        footer button {
+            padding: 10px 20px;
+            background-color: #00B4D8;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        footer button:hover {
+            background-color: #0077B6;
+        }
     </style>
-    
-      <title>Maddie Phelps | Portfolio</title>
-      <h1>My Name is Maddie Phelps!</h1>
-      <h2>Welcome to my portfolio.</h2>
-    </head>
-  <body>
+</head>
+<body>
+
+    <header>
+        <h1>My Name is Maddie Phelps!</h1>
+        <h2>Welcome to my portfolio.</h2>
+    </header>
+
     <nav>
-        <b><a href="aboutme.html">About Me</a></b>&nbsp;
-      <b><a href="showcase.html">Showcase</a></b>&nbsp;
-        <b><a href="projects.html">Projects</a></b>&nbsp;
-        <b><a href="contact.html">Contact</a></b>&nbsp;
+        <a href="aboutme.html">About Me</a>
+        <a href="showcase.html">Showcase</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
     </nav>
-    <div class="hero-image"> <img src="portfolioimage.JPG" alt="Nice to Meet You!" style="width:300px;px;height:400px;"></div>
-        <div class="hero-text">
-            <p>I am a senior Social Media and Digital Communication major at High Point University.</p>
-            <button>Get In Touch</button>
-         </div>
-           
+
+    <div class="hero-image">
+        <img src="portfolioimage.JPG" alt="Nice to Meet You!">
+    </div>
+
+    <div class="hero-text">
+        <p>I am a senior Social Media and Digital Communication major at High Point University.</p>
+        <button onclick="alert('Contact me at: email@example.com')">Get In Touch</button>
+    </div>
+
     <footer>
-      <hr>
-      <div>
-    <table> <table style="width: 60%; margin: 0 auto; border-collapse: collapse; font-size: 14px;">
-       
-        <tr>
-          <td style="background-color: #03045E;"></td>  
-          <td style="background-color: #0077B6;"></td>  
-          <td style="background-color: #00B4D8;"></td>  
-          <td style="background-color: #90E0EF;"></td>  
-          <td style="background-color: #CAF0F8;"></td> 
-        </tr>
-      </table>
+        <table>
+            <tr>
+                <td style="background-color: #03045E;"></td>  
+                <td style="background-color: #0077B6;"></td>  
+                <td style="background-color: #00B4D8;"></td>  
+                <td style="background-color: #90E0EF;"></td>  
+                <td style="background-color: #CAF0F8;"></td> 
+            </tr>
+        </table>
 
-        <button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = new Date().toLocaleString();">
+            Show Date and Time
+        </button>
         <p id="demo"></p>
-        <button onclick="myTable()">Show Date/Time</button>
-        <script>
-function myTable() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
-
         
-          </div>
+        <button onclick="togglePalette()">Toggle Color Palette</button>
+        <script>
+            function togglePalette() {
+                var table = document.querySelector('footer table');
+                if (table.style.display === "none") {
+                    table.style.display = "table";
+                } else {
+                    table.style.display = "none";
+                }
+            }
+        </script>
     </footer>
 
-  </body>
+</body>
 </html>
+
