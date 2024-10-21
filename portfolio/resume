@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maddie Phelps | Resume</title>
+    <style>
+        body {
+            background-color: seashell;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #03045E;
+            color: white;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0077B6; */
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .resume-section {
+            background-color: #90E0EF; 
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        h2 {
+            color: darkslateblue;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0077B6;
+            color: white;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Maddie Phelps</h1>
+        <h2>Resume</h2>
+    </header>
+
+    <nav>
+        <a href="aboutme.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="showcase.html">Showcase</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="resume-section">
+        <h2>Download My Resume</h2>
+        <p>You can download my resume using the link below:</p>
+        <a href="MaddiePhelpsResume.pdf" target="_blank" style="color: #0077B6; font-weight: bold;">Download Resume</a>
+    </div>
+
+<footer>
+        <table>
+            <tr>
+                <td style="background-color: #03045E;"></td>  
+                <td style="background-color: #023E8A;"></td>  
+                <td style="background-color: #00B4D8;"></td>  
+                <td style="background-color: #90E0EF;"></td>  
+                <td style="background-color: #CAF0F8;"></td> 
+            </tr>
+        </table>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = new Date().toLocaleString();">
+            Show Date and Time
+        </button>
+        <p id="demo"></p>
+        
+        <button onclick="togglePalette()">Toggle Color Palette</button>
+        <script>
+            function togglePalette() {
+                var table = document.querySelector('footer table');
+                if (table.style.display === "none") {
+                    table.style.display = "table";
+                } else {
+                    table.style.display = "none";
+                }
+            }
+        </script>
+    </footer>
+
+</body>
+</html>
