@@ -7,7 +7,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #CAF0F8; /* Light blue */
         }
         header {
@@ -34,6 +34,7 @@
             border-radius: 5px;
             max-width: 600px;
             margin: 0 auto;
+            text-align: center;
         }
         img {
             width: 150px;
@@ -49,6 +50,34 @@
         p {
             font-size: 16px;
             line-height: 1.5;
+            color: #03045E; /* Navy blue */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0077B6;
+            color: white;
+            position: relative;
+        }
+        footer table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        footer td {
+            height: 40px;
+            width: 20%;
+        }
+        footer button {
+            padding: 10px 20px;
+            background-color: #00B4D8;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        footer button:hover {
+            background-color: #0077B6;
         }
     </style>
 </head>
@@ -71,6 +100,36 @@
         <p>I am a senior Social Media and Digital Communication major at High Point University. I have a passion for digital marketing, content creation, and engaging with audiences through various platforms.</p>
         <p>In my free time, I enjoy writing, dancing, and exploring new trends in social media.</p>
     </div>
+
+    <footer>
+        <table id="colorPalette">
+            <tr>
+                <td style="background-color: #03045E;"></td>  
+                <td style="background-color: #023E8A;"></td>  
+                <td style="background-color: #00B4D8;"></td>  
+                <td style="background-color: #90E0EF;"></td>  
+                <td style="background-color: #CAF0F8;"></td> 
+            </tr>
+        </table>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = new Date().toLocaleString();">
+            Show Date and Time
+        </button>
+        <p id="demo"></p>
+        
+        <button onclick="togglePalette()">Toggle Color Palette</button>
+        
+        <script>
+            function togglePalette() {
+                var table = document.getElementById('colorPalette');
+                if (table.style.display === "none") {
+                    table.style.display = "table";
+                } else {
+                    table.style.display = "none";
+                }
+            }
+        </script>
+    </footer>
 
 </body>
 </html>
