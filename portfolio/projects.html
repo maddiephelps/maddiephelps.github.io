@@ -1,79 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <title>Maddie Phelps | Projects</title>
     <style>
         body {
-            background-color: #CAF0F8; 
+            background-color: #F5F5DC; /* Beige */
+            margin: 0;
+            padding: 20px;
             font-family: Arial, sans-serif;
-            margin: 40px;
         }
-        h1 {
-            color: #0077B6; 
-        }
-        h2 {
-            color: #03045E; 
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #03045E; /* Navy blue */
+            color: white;
         }
         nav {
-            margin-bottom: 40px;
+            text-align: center;
+            margin: 20px 0;
         }
         nav a {
-            font-weight: bold;
+            margin: 0 15px;
             text-decoration: none;
-            color: #03045E;
-            margin-right: 20px;
+            color: #0077B6; /* Deep sky blue */
         }
-        .projects-section, .medium-section {
-            margin-bottom: 50px;
+        nav a:hover {
+            text-decoration: underline;
         }
-        .project-item {
-            background-color: #90E0EF; 
+        .projects-section {
+            background-color: #90E0EF; /* Light cyan */
             padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-        .medium-section {
-            background-color: #90E0EF; 
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .medium-section p {
-            margin-bottom: 10px;
-        }
-        .btn {
-            background-color: #0077B6;
-            color: white;
-            padding: 10px 20px;
-            border: none;
             border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        h2 {
+            color: darkslateblue;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0077B6; /* Deep sky blue */
+            color: white;
+            position: relative;
+        }
+        footer table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        footer td {
+            height: 40px;
         }
     </style>
-    <title>Projects | Maddie Phelps</title>
-  </head>
-  <body>
-    <h1>Projects</h1>
-    
+</head>
+<body>
+
+    <header>
+        <h1>Projects</h1>
+    </header>
+
     <nav>
-      <a href="aboutme.html">About Me</a>
-      <a href="projects.html">Projects</a>
-      <a href="showcase.html">Showcase</a>
-      <a href="contact.html">Contact</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="showcase.html">Showcase</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
-    <section class="projects-section">
-      <h2>Highlighted Projects</h2>
-      
-    
-      
+    <div class="projects-section">
+        <h2>The Centennial Education Program for Community Youth</h2>
+        <p>This program aims to create an academic facility within the Nido & Mariana Qubein Children’s Museum, offering quality education to the youth of High Point.</p>
 
-    <section class="medium-section">
-      <h2>My Medium Blog</h2>
-      <p>Follow me on Medium for articles about digital communication, social media strategies, and personal insights.</p>
-      <p>I regularly write about topics relevant to my field, including social media trends, digital marketing, and my journey as a digital communication major.</p>
-      <a href="https://medium.com/digital-social-writing" target="_blank" class="btn">Visit My Medium Blog</a>
-    </section>
+        <h2>Medium Profile</h2>
+        <p>Check out my articles on Medium: <a href="https://medium.com/@maddiephelps" target="_blank">@maddiephelps</a></p>
+    </div>
 
-  </body>
+    <footer>
+        <table>
+            <tr>
+                <td style="background-color: #03045E;"></td>  
+                <td style="background-color: #023E8A;"></td>  
+                <td style="background-color: #00B4D8;"></td>  
+                <td style="background-color: #90E0EF;"></td>  
+                <td style="background-color: #CAF0F8;"></td> 
+            </tr>
+        </table>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = new Date().toLocaleString();">
+            Show Date and Time
+        </button>
+        <p id="demo"></p>
+        
+        <button onclick="togglePalette()">Toggle Color Palette</button>
+        <script>
+            function togglePalette() {
+                var table = document.querySelector('footer table');
+                if (table.style.display === "none") {
+                    table.style.display = "table";
+                } else {
+                    table.style.display = "none";
+                }
+            }
+        </script>
+    </footer>
+
+</body>
 </html>
+
+
