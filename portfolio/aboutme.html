@@ -5,7 +5,7 @@
     <title>About Me | Maddie Phelps</title>
     <style>
         body {
-            background-color: seashell; 
+            background-color: #F5F5DC; /* Beige */
             margin: 0;
             padding: 20px;
             font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@
         header {
             text-align: center;
             padding: 20px;
-            background-color: #03045E; 
+            background-color: #03045E; /* Navy blue */
             color: white;
         }
         nav {
@@ -23,22 +23,25 @@
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #0077B6; 
+            color: #0077B6; /* Deep sky blue */
         }
         nav a:hover {
             text-decoration: underline;
         }
         .about-section {
-            background-color: seashell; 
+            background-color: #90E0EF; /* Light cyan */
             padding: 20px;
             border-radius: 5px;
-            max-width: 600px;
+            max-width: 800px; /* Increased width */
             margin: 20px auto;
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center vertically */
         }
-        img {
-            width: 200px;
-            height: 300px;
-            
+        .about-section img {
+            width: 150px; /* Adjusted size */
+            height: 150px; /* Adjusted size */
+            border-radius: 50%; /* Circular image */
+            margin-right: 20px; /* Space between image and text */
         }
         h2 {
             color: darkslateblue;
@@ -74,11 +77,13 @@
     </nav>
 
     <div class="about-section">
-       <div> <img src="IMG_9634.jpeg"> </div>
-        <h2>Hello, I'm Maddie Phelps!</h2>
-        <p>I am a senior Social Media and Digital Communication major at High Point University. I have a passion for digital marketing, content creation, and engaging with audiences through various platforms.</p>
-        <p>In my free time, I enjoy writing, dancing, and exploring new trends in social media.</p>
- 
+        <img src="IMG_9634.JPG" alt="Maddie Phelps">
+        <div>
+            <h2>Hello, I'm Maddie Phelps!</h2>
+            <p>I am a senior Social Media and Digital Communication major at High Point University. I have a passion for digital marketing, content creation, and engaging with audiences through various platforms.</p>
+            <p>In my free time, I enjoy writing, dancing, and exploring new trends in social media.</p>
+        </div>
+    </div>
 
     <footer>
         <table>
@@ -111,3 +116,4 @@
 
 </body>
 </html>
+
