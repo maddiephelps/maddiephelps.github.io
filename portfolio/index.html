@@ -51,15 +51,31 @@
       <div>
     <table>
         <tr>
-          <td style="background-color: #03045E;"></td>  <!-- Navy Blue -->
-          <td style="background-color: #0077B6;"></td>  <!-- Deep Sky Blue -->
-          <td style="background-color: #00B4D8;"></td>  <!-- Cyan -->
-          <td style="background-color: #90E0EF;"></td>  <!-- Light Cyan -->
-          <td style="background-color: #CAF0F8;"></td>  <!-- Very Light Cyan -->
+          <td style="background-color: #03045E;"></td>  
+          <td style="background-color: #0077B6;"></td>  
+          <td style="background-color: #00B4D8;"></td>  
+          <td style="background-color: #90E0EF;"></td>  
+          <td style="background-color: #CAF0F8;"></td> 
         </tr>
-      <button type="button"
-        onclick="document.getElementById(
       </table>
+
+        <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+        <p id="demo"></p>
+        <button onclick="myTable()">Show Date/Time</button>
+        <script>
+function myTable() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+        
           </div>
     </footer>
 
