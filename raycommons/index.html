@@ -1,52 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  <meta charset="UTF-8"
-     <title>Ray Commons - Eden, NC</title>
-     <style>
-        body { font-family: Arial, sans-serif; margin: 0; color: #333; }
-        header { background: #4CAF50; color: white; padding: 20px; text-align: center; }
-        nav { text-align: center; background: #333; padding: 10px; }
-        nav a { color: white; margin: 0 10px; text-decoration: none; }
-        .section { padding: 20px; }
-        footer { background: #333; color: white; text-align: center; padding: 10px; }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray Commons Apartments - Eden, NC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f4e3;
+            color: #a2a392;
+            margin: 0;
+        }
+        header {
+            position: relative;
+            background-image: url('/mnt/data/original.jpg'); /* Updated image */
+            background-size: cover;
+            background-position: center;
+            color: #f8f4e3;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            z-index: 1;
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 2;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #d5d0cd;
+            padding: 10px;
+        }
+        nav a {
+            color: #9a998c;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #a2a392;
+        }
+        .section {
+            padding: 20px;
+            background-color: #d4cdc3;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+        .section h2 {
+            color: #9a998c;
+        }
+        footer {
+            background-color: #9a998c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Ray Commons Apartments</h1>
-        <p>The Most Beautiful Apartment Complex in Eden</p>
+        <p>Your new home in Eden, NC</p>
     </header>
 
     <nav>
-        <a href="#features">Features</a> |
-        <a href="#location">Location</a> |
+        <a href="#features">Features</a>
+        <a href="#location">Location</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <section id="features">
+    <section id="welcome" class="section">
+        <h2>Welcome to Ray Commons Apartments</h2>
+        <p>Welcome to your new home at Ray Commons Apartments where history meets modern-day comfort. This 100+ year old hotel has been renovated with high-end appliances, counters, and tile everywhere to create a wonderful home with an industrial feel - concrete floors, high ceilings, and more.</p>
+        <p>This building is a historic landmark, from the antique "Hotel" sign on the side to the original brick façade. Our building has a selection of studio, 1-bedroom, and 2-bedroom apartments. There is a state-of-the-art gym on the ground floor only for residents (you've probably seen it while driving past on Washington St) and a shared laundry room. Plenty of parking is available around the building.</p>
+        <p>This building also combines small-town living with an urban feel, making it unique in ways we've never seen before. Step out of the building's front door onto bustling Washington St, which feels like a city center. Retail shops, restaurants, and bars dot the immediate landscape, and the consistent stream of people and cars creates that urban vibe; however, you can hop in your car and drive 5 minutes in most directions to find yourself in the country.</p>
+        <p>Grab an apartment on the third or fourth floor and enjoy some of the most beautiful views in Eden.</p>
+        <p>Our apartments range in price from $800/mo to $900/mo - check out the homes we currently have ready for move-in. If we are full, you can reach out to our wonderful management team to get on the waiting list for the next available home.</p>
+    </section>
+  <section id="features" class="section">
         <h2>Features</h2>
-        <p>Spacious 1 and 2-bedroom units, modern appliances, pet-friendly, and more.</p>
+        <p>Spacious 1 and 2-bedroom units, modern appliances, pet-friendly, and loacted in the heart of historic downtown Eden.</p>
     </section>
 
-    <section id="location">
+    <section id="location" class="section">
         <h2>Location</h2>
-        <p>Located in Eden, NC, near shopping, dining, and parks.</p>
+        <p>Located in Eden, NC, near shopping, dining, and parks. With a prime location on Washington Street, Ray Commons is the center of all your needs. </p>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section">
         <h2>Contact Us</h2>
         <p>Email: <a href="admin@clayrealtyco.com">admin@clayrealtyco.com</a></p>
         <p>Phone: (919) 441-2509</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Ray Commons Apartments</p>
+        <p>&copy; 2024 Clay Realty Co</p>
     </footer>
 </body>
 </html>
-
-  
-  
-  
-
