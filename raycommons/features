@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ray Commons - Features</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f8f4e3;
+            color: #333;
+            margin: 0;
+        }
+        header {
+            position: relative;
+            background-image: url('/mnt/data/original.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #f8f4e3;
+            text-align: center;
+            padding: 100px 20px;
+            font-family: 'Lora', serif;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4); 
+            z-index: 1;
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            color: #f8f4e3;
+        }
+        header h1 {
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #d5d0cd;
+            padding: 15px;
+        }
+        nav a {
+            color: #6b675f;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #a2a392;
+        }
+        .section {
+            padding: 20px;
+            background-color: #d4cdc3;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+        .section h2 {
+            color: #6b675f;
+            font-family: 'Lora', serif;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #4f4a42;
+        }
+        footer {
+            background-color: #9a998c;
+            color: #f8f4e3;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+            font-family: 'Lora', serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ray Commons Apartments</h1>
+        <p>Explore Our Apartment Features and Amenities</p>
+    </header>
+
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="features" class="section">
+        <h2>Apartment Features</h2>
+        <ul>
+            <li>High Speed Internet Access</li>
+            <li>Air Conditioning</li>
+            <li>Heating</li>
+            <li>Ceiling Fans</li>
+            <li>Smoke Free</li>
+            <li>Cable Ready</li>
+            <li>Dishwasher</li>
+            <li>Granite Countertops</li>
+            <li>Stainless Steel Appliances</li>
+            <li>Eat-in Kitchen</li>
+            <li>Oven</li>
+            <li>Range</li>
+            <li>Refrigerator</li>
+            <li>Vinyl Flooring</li>
+            <li>Family Room</li>
+            <li>Vaulted Ceiling</li>
+            <li>Views</li>
+            <li>Loft Layout</li>
+        </ul>
+    </section>
+
+    <section id="amenities" class="section">
+        <h2>Community Amenities</h2>
+        <ul>
+            <li>Fitness Center</li>
+            <li>Laundry Facilities</li>
+            <li>Controlled Access</li>
+            <li>Key Fob Entry</li>
+            <li>Trash Pickup - Curbside</li>
+            <li>Renters Insurance Program</li>
+            <li>Online Services</li>
+            <li>Vintage Building</li>
+        </ul>
+    </section>
+
+    <footer>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:admin@clayrealtyco.com">admin@clayrealtyco.com</a></p>
+            <p>Phone: (919) 441-2509</p>
+        </section>
+        <p>&copy; 2024 Clay Realty Co</p>
+    </footer>
+</body>
+</html>
