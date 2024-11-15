@@ -245,6 +245,22 @@ img {vertical-align: middle;}
         
     </section>
         <p>&copy; 2024 Clay Realty Co</p>
+        <table>
+            <tr>
+                <td style="background-color: #f8f4e3;"></td>  
+                <td style="background-color: #d5d0cd;"></td>  
+                <td style="background-color: #6b675f;"></td>  
+                <td style="background-color: #4f4a42;"></td>  
+            </tr>
+        </table>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = new Date().toLocaleString();">
+            Show Date and Time
+        </button>
+        <p id="demo"></p>
+        
+        <button onclick="togglePalette()">Toggle Color Palette</button>
+        
     </footer>
     
 <script>
@@ -274,6 +290,16 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+    
+            function togglePalette() {
+                var table = document.querySelector('footer table');
+                if (table.style.display === "none") {
+                    table.style.display = "table";
+                } else {
+                    table.style.display = "none";
+                }
+            }
+       
 </script>
 
 </body>
