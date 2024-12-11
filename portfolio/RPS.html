@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <script src="RPS.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .choices {
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: darkcyan;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: lightskyblue;
+        }
+
+        #userChoice, #computerChoice, #result {
+            font-size: 18px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+        <button onclick="playRound('rock')">Rock</button>
+        <button onclick="playRound('paper')">Paper</button>
+        <button onclick="playRound('scissors')">Scissors</button>
+    </div>
+
+    <br><br>
+    <div>User Chose:</div>
+    <div id="userChoice"></div>
+    <br><br>
+
+    <br><br>
+    <div>Computer Chose:</div>
+    <div id="computerChoice"></div>
+    <br><br>
+
+<div>Result: </div>
+    <div id="result"></div>
+</body>
+</html>
